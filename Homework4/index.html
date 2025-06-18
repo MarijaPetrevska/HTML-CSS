@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- I added a title Homework 4-->
+    <title>Homework 4</title>
+  </head>
+  <body>
+    <!-- This is the form structure. The form element and the action and method attributes. -->
+    <!-- The inline style is defined within the style attribute -->
+    <!--  I added the width of the element, margin, the background color, padding and box-shadow - it creates a shadow around the element here. -->
+    <form
+      action=""
+      method="GET"
+      style="
+        width: 550px;
+        margin: 0 auto;
+        background-color: #fdfcfc;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <!-- I added the heading 1: Dado Tea Lunch Special -->
+      <h1>Dado Tea Lunch Special</h1>
+      <!-- First Paragraph and </br> tag -->
+      <p>
+        Monday through Friday <br />
+        11am ～ 3pm <br />
+        $9.95 (plus tax)
+      </p>
+      <!-- One more paragraph -->
+      <p>Includes sandwich, snack and drink.</p>
+      <!-- Fieldset tag to group the elements. It creates a box around the related elements. -->
+      <fieldset>
+        <!-- I defined a caption:"Order Information" for fieldset element. -->
+        <legend>Order Information</legend>
+        <label for="name"><b>Name</b></label>
+        <br />
+        <!-- I defined a field for the name. -->
+        <!-- I added placeholder. It defines the expected content. -->
+        <!-- Also I added required. The form cannot be submitted until the input field is completed.-->
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <br /><br />
+        <!-- Radio Buttons -->
+        <!-- I defined the value attribute. -->
+        <input type="radio" name="place" value="here" id="here" />
+        <!-- Here -->
+        <label for="here">Here</label>
+        <br />
+        <input type="radio" name="place" value="toGo" id="toGo" />
+        <!-- To Go -->
+        <label for="toGo">To Go</label>
+      </fieldset>
+      <br />
+      <!-- The <fieldset> tag -->
+      <fieldset>
+        <!-- Caption: Sandwiches -->
+        <legend>Sandwiches</legend>
+        <!-- The menu has unique options dividing the sandwiches by day. -->
+        <!-- Monday -->
+        <p><b>Monday</b></p>
+        <!-- RadioButtons -->
+        <input
+          type="radio"
+          name="sandwichMonday"
+          value="tomatoMozzarella"
+          id="tomatoMozzarella"
+        />
+        <!-- Tomato Mozzarela -->
+        <label for="tomatoMozzarella">Tomato Mozzarella</label>
+        <br />
+        <input
+          type="radio"
+          name="sandwichMonday"
+          value="chickenSalad"
+          id="chickenSalad"
+        />
+        <!-- Chicken Salad -->
+        <label for="chickenSalad">Chicken Salad</label>
+        <br />
+        <!-- Tuesday -->
+        <p><b>Tuesday</b></p>
+        <input
+          type="radio"
+          name="sandwichTuesday"
+          value="greekSaladWrap"
+          id="greekSaladWrap"
+        />
+        <!-- Greek Salad Wrap -->
+        <label for="greekSaladWrap">Greek Salad Wrap</label>
+        <br />
+        <input
+          type="radio"
+          name="sandwichTuesday"
+          value="roastedTurkeyTuesday"
+          id="roastedTurkeyTuesday"
+        />
+        <!-- Roasted Turkey in Tuesday -->
+        <label for="roastedTurkeyTuesday">Roasted Turkey</label>
+        <br />
+
+        <!-- Wednesday -->
+        <p><b>Wednesday</b></p>
+        <input
+          type="radio"
+          name="sandwichWednesday"
+          value="redPepperHummus"
+          id="redPepperHummus"
+        />
+        <!-- Red Pepper Hummus -->
+        <label for="redPepperHummus">Red Pepper Hummus</label>
+        <br />
+        <input
+          type="radio"
+          name="sandwichWednesday"
+          value="roastedTurkeyWednesday"
+          id="roastedTurkeyWednesday"
+        />
+        <!-- Roasted Turkey in Wednesday -->
+        <label for="roastedTurkeyWednesday">Roasted Turkey</label>
+        <br />
+
+        <!-- Thursday -->
+        <p><b>Thursday</b></p>
+        <input
+          type="radio"
+          name="sandwichThursday"
+          value="carrotGingerHummusWrap"
+          id="carrotGingerHummusWrap"
+        />
+        <!-- Carrot-Ginger Hummus Wrap -->
+        <label for="carrotGingerHummusWrap">Carrot-Ginger Hummus Wrap</label>
+        <br />
+        <input
+          type="radio"
+          name="sandwichThursday"
+          value="eggSalad"
+          id="eggSalad"
+        />
+        <!-- Egg Salad -->
+        <label for="eggSalad">Egg Salad</label>
+        <br />
+
+        <!-- Friday -->
+        <p><b>Friday</b></p>
+        <input
+          type="radio"
+          name="sandwichFriday"
+          value="dadoWrap"
+          id="dadoWrap"
+        />
+        <!-- Dado Wrap -->
+        <label for="dadoWrap">Dado Wrap</label>
+        <br />
+        <input
+          type="radio"
+          name="sandwichFriday"
+          value="tunaSalad"
+          id="tunaSalad"
+        />
+        <!-- Tuna Salad -->
+        <label for="tunaSalad">Tuna Salad</label>
+        <!-- Hr tag -->
+        <hr />
+        <!-- CheckBox -->
+        <!-- With the checkbox the user can select the option.  -->
+        <input
+          type="checkbox"
+          name="bread"
+          value="glutenFreeBread"
+          id="glutenFreeBread"
+        />
+        <!-- Gluten Free Bread  -->
+        <label for="glutenFreeBread">Gluten Free Bread (75¢ extra)</label>
+      </fieldset>
+      <!-- <fieldset> tag -->
+      <fieldset>
+        <!-- Caption: Snack -->
+        <legend>Snack</legend>
+        <!-- Paragraph snacks -->
+        <p>Snacks</p>
+        <!-- Radio Buttons -->
+        <input type="radio" name="snack" value="apple" id="apple" />
+        <!-- Apple -->
+        <label for="apple">Apple</label>
+        <br />
+        <input type="radio" name="snack" value="banana" id="banana" />
+        <!-- Banana -->
+        <label for="banana">Banana</label>
+        <!-- <br> tag -->
+        <br />
+        <!-- Potato Chips -->
+        <input type="radio" name="snack" value="potatoChips" id="potatoChips" />
+        <label for="potatoChips">Potato Chips</label>
+      </fieldset>
+      <!-- <fieldset> tag -->
+      <fieldset>
+        <!-- Caption: Drink -->
+        <legend>Drink</legend>
+        <label for="drinks"><b>Drinks</b></label>
+        <br />
+        <!-- Drop down/Select List Box -->
+        <!-- I used the <select tag> to create the drop-down list for drinks. -->
+        <!-- I added the attributes name and id. -->
+        <select name="drinks" id="drinks">
+          <!-- On the menu are offered tea and coffee. -->
+          <!-- I used the <optiongroup> to create a group related elements. First for coffee. -->
+          <optgroup label="coffee">
+            <!-- With  <option> tag is defined the option is the select list. Example: Hot Coffee or Iced Coffee. -->
+            <option value="hotCoffee">Hot Coffee</option>
+            <option value="icedCoffee">Iced Coffee</option>
+            <option value="organicPeppermintCoffee">
+              Organic Peppermint Coffee
+            </option>
+          </optgroup>
+          <!-- Option group for Teas -->
+          <optgroup label="tea">
+            <option value="hotSenchaGreenTea">Hot Sencha Green Tea</option>
+            <option value="icedSenchaGreenTea">Iced Sencha Green Tea</option>
+            <option value="hotKeemunBlackTea">Hot Keemun Black Tea</option>
+            <option value="icedKeemunBlackTea">Iced Keemun Black Tea</option>
+          </optgroup>
+        </select>
+        <!-- Hr tag -->
+        <hr />
+        <!-- CheckBox -->
+        <input
+          type="checkbox"
+          name="largeDrink"
+          value="largeDrink"
+          id="largeDrink"
+        />
+        <!-- Large Drink (75 cents extra)-->
+        <label for="largeDrink">Large Drink (75¢ extra)</label>
+      </fieldset>
+      <!-- <br> tag -->
+      <br />
+      <!-- Button -->
+      <!-- Place Order -->
+      <input type="submit" name="submit" id="submit" value="PLACE ORDER" />
+      <br />
+      <br />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+/* The (*) symbol is the universal selector */
+/* This is applied to every element */
+/* Box sizing: border-box;- the width and height include the padding and border.*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading and Paragraph Styles */
+h1 {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+p {
+  color: red;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+/* Parent Container */
+.parent-div {
+  /* Position relative */
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 3px solid black;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+/* Child boxes (elements) in different colours */
+/* White Box 1 */
+.white-box {
+  /* position absolute  */
+  /* it is used to position an element relative to its nearest positioned ancestor */ 
+  position: absolute;
+  width: 25%;
+  height: 33%;
+  top: 0;
+  left: 0;
+  border: 10px solid black;
+  background-color: white;
+}
+/* Red Box */
+.red-box {
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  top: 0;
+  left: 25%;
+  border: 10px solid black;
+  background-color: red;
+}
+/* White Box 2 */
+.white-box1 {
+  position: absolute;
+  width: 25%;
+  height: 43%;
+  border: 10px solid black;
+  top: 33%;
+  left: 0;
+}
+/* Blue Box */
+.blue-box {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 75%;
+  left: 0;
+  background-color: rgb(45, 147, 214);
+  border: 10px solid black;
+}
+/* White Box 3 */
+.white-box2 {
+  position: absolute;
+  width: 67%;
+  height: 25%;
+  top: 75%;
+  left: 25%;
+  border: 10px solid black;
+  background-color: white;
+}
+/* White Box 4 */
+.white-box3 {
+    position: absolute;
+    width: 8%;
+    height: 13%;
+    top: 75%;
+    left: 92%;
+    border: 10px solid black;
+    background-color: white;
+  }
+  /* Yellow Box */
+.yellow-box {
+    position: absolute;
+    width: 8%;
+    height: 13%;
+    top: 87%;
+    left: 92%;
+    background-color: yellow;
+    border: 10px solid black;
+  }

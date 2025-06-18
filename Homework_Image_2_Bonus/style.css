@@ -1,0 +1,273 @@
+/* Recrating the image 2 using HTML and CSS elements for positioning and coloring. */
+/* Box sizing:border-box; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Heading and Paragraph Styles */
+/* Heading 1*/
+h1 {
+  color: black;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+/* Parent Container */
+.parent-div {
+  width: 1018px;
+  height: 1024px;
+  border: none;
+  padding: 10px;
+  margin-left: 100px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Gray Box */
+.gray-box {
+  width: 25%;
+  height: 10%;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  background-color: rgb(241, 228, 228);
+  position: absolute;
+  top: 0;  
+  left: 0;
+}
+/* White Box 1 */
+.white-box {
+  width: 35%;
+  height: 10%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 0;  
+  left: 25%; 
+}
+/* Yellow Box */
+.yellow-box {
+  width: 25%;
+  height: 10%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 60%;
+
+} 
+/* White Box 2 */
+.white-box1 {
+  width: 15%;
+  height: 60%;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: white;  
+  position: absolute;
+  top: 0;
+  left: 85%;
+} 
+/* White Box 3 */
+.white-box2 {
+  width: 12.5%;
+  height: 20%;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+/* Red Box */
+.red-box {
+  width: 47.5%;
+  height: 40%;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  background-color: red;
+  position: absolute;
+  top: 10%;
+  left: 12.5%;
+}
+/* Yellow Box 2 */
+.yellow-box1 {
+  width: 25%;
+  height: 20%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: yellow;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+}
+/* Gray Box 1 */
+.gray-box1 {
+  width: 12.5%;
+  height: 30%;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  background-color: rgb(241, 228, 228);
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+/* White Box 4 */
+.white-box3{
+  width: 12.5%;
+  height: 20%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+/* White Box 5 */
+.white-box4{
+  width: 12.5%;
+  height: 20%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 72.5%;
+}
+/* Black Box */
+.black-box{
+  width: 23.75%;
+  height: 20%;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+}
+/* Gray Box 3 */
+.gray-box2 {
+  width: 23.75%;
+  height: 10%;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  background-color: rgb(241, 228, 228);
+  position: absolute;
+  top: 50%;
+  left: 36.25%;
+}
+/* White Box 6 */
+.white-box5{
+  width: 23.75%;
+  height: 10%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 36.25%;
+}
+/* White Box 7 */
+.white-box6{
+  width: 25%;
+  height: 10%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+}
+/* Yellow Box 3 */
+.yellow-box2 {
+  width: 12.5%;
+  height: 20%;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  background-color: yellow;
+  position: absolute;
+  top: 60%;
+  left: 0%;
+}
+/* White Box 8 */
+.white-box7 {
+  width: 23.75%;
+  height: 10%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 70%;
+  left: 12.5%;
+}
+/* Black Box 2 */
+.black-box1{
+  width: 23.75%;
+  height: 5%;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: black;
+  position: absolute;
+  top: 70%;
+  left: 36.25%;
+}
+/* Blue Box */
+.blue-box{
+  width: 25%;
+  height: 15%;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: rgb(22, 22, 119);
+  position: absolute;
+  top: 60%;
+  left: 60%;
+}
+/* White Box 9 */
+.white-box8{
+  width: 48.75%;
+  height: 5%;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  background-color: white;
+  position: absolute;
+  top: 75%;
+  left: 36.25%;
+}
+/* Red Box 2 */
+.red-box1 {
+  width: 15%;
+  height: 20%;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  background-color: red;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+}
+

@@ -1,0 +1,422 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  background-color: #1487a7;
+  font-family: "Lora", serif;
+  padding: 10px;
+  font-size: 2em;
+}
+
+.paragraph-1 {
+  color: #1487a7;
+  text-align: left;
+  font-family: "Lora", serif;
+  padding: 5px;
+  font-size: 1.2em;
+  position: relative;
+  top: 160px;
+  left: 3%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(118, 196, 244, 0.1);
+}
+.paragraph-2 {
+  color: #1487a7;
+  text-align: left;
+  font-family: "Lora", serif;
+  padding: 5px;
+  font-size: 1em;
+  position: relative;
+  top: 180px;
+  left: 5%;
+  font-weight: lighter;
+}
+/* Social media icons styles */
+.media1 {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  position: absolute;
+  right: 50px;
+  top: 300px;
+}
+.media2 {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  position: absolute;
+  right: 50px;
+  top: 350px;
+}
+.media3 {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  position: absolute;
+  right: 50px;
+  top: 400px;
+}
+.media4 {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  position: absolute;
+  right: 50px;
+  top: 450px;
+}
+/* Image icon styling */
+.image-icon {
+  width: 60px;
+  height: 55px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+/* Images styles */
+.image1 {
+  position: absolute;
+  right: 120px;
+  top: 250px;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+.image2 {
+  position: absolute;
+  right: 145px;
+  top: 320px;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+/* Navigation */
+nav {
+  position: relative;
+  /* Aligns the items vertically  */
+  flex-direction: column;
+  /* Align items to the start of the container */
+  justify-content: flex-start;
+  width: 280px;
+  height: auto;
+  top: 20px;
+  left: 50px;
+  /* It keeps navigation above other content  */
+  z-index: 100;
+  padding: 0 20px;
+}
+
+nav a {
+  /* The links-block level elements */
+  display: block;
+  color: white;
+  /* I removed the underline from links */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #61b1c7;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive navigation for smaller screens */
+/* I added media query */
+@media screen and (max-width: 768px) {
+  nav {
+    /* Navigation items in a row */
+    flex-direction: row;
+    justify-content: space-around;
+    /* Space between links */
+    gap: 10px;
+    width: 100%;
+    top: 20px;
+    left: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    width: auto;
+    margin: 0 3px;
+  }
+}
+nav a:hover {
+  background-color: #3789a9;
+}
+nav .about {
+  top: 50px;
+}
+nav .projects {
+  top: 100px;
+}
+nav .homeworks {
+  top: 150px;
+}
+nav .contact {
+  top: 200px;
+}
+/* Back to top Button */
+.back-button {
+  position: fixed;
+  bottom: 25px;
+  right: 170px;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: #1487a7;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+a:hover {
+  background-color: rgb(47, 180, 178);
+  transition: background-color 1s;
+}
+
+h2 {
+  color: #1487a7;
+  font-size: 1.5em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+/* Sections */
+section {
+  margin-top: 120px;
+  padding: 15px;
+}
+/* Home Section */
+section#home {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+/* About Section */
+section#about {
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+.about-section {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #1487a7;
+}
+.about-section1 {
+  text-emphasis: none;
+  margin-top: 30px; 
+  margin-bottom: 15px; 
+  max-width: 900px;
+  text-shadow: #61b1c7;
+  color: #1487a7;
+  text-align: left;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: auto;
+  border-top: 2px dashed #1487a7;
+}
+
+.about-section {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #1487a7;
+}
+.about-section1 {
+  text-emphasis: none;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 900px;
+  text-shadow: #61b1c7;
+  color: #1487a7;
+  text-align: left;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: auto;
+  border-top: 2px dashed #1487a7;
+}
+/* Section homeworks */
+section#homeworks {
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.homeworks1 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #1487a7;
+}
+.my_homeworks {
+  text-emphasis: none;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  max-width: 900px;
+  text-shadow: #61b1c7;
+  color: #1487a7;
+  text-align: left;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: auto;
+  border-top: 2px dashed #1487a7;
+}
+
+.homework-group {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.html-css-homeworks {
+  background-color: #eaf7ff;
+}
+
+h3 {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul li {
+  margin-bottom: 8px;
+}
+a {
+  text-decoration: none;
+  color: #2e7acb;
+  font-size: 18px;
+}
+a:hover {
+  color: darkblue;
+}
+/* Projects section */
+section#projects {
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.project {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #1487a7;
+}
+.detail-work-project {
+  text-emphasis: none;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 900px;
+  text-shadow: #61b1c7;
+  color: #1487a7;
+  text-align: left;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: auto;
+  border-top: 2px dashed #1487a7;
+}
+/* Contact section */
+section#contact {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.contact1 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #1487a7;
+}
+.my_mail,
+.my_github {
+  text-emphasis: none;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  max-width: 800px;
+  text-shadow: #61b1c7;
+  color: #1487a7;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 20px;
+  margin-right: auto;
+}
+/* Form section */
+section#form {
+  display: flex;
+  /* I wanted the form to be in the center */
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+/* Form */
+form {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* Max width for the form */
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+/* Allows vertical resizing */
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  background-color: #ffffff;
+  color: rgb(13, 95, 143);
+  border: 2px solid rgb(13, 95, 143);
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Footer section */
+.footer {
+  background-color: #1f628b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

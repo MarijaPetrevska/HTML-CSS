@@ -1,0 +1,318 @@
+/* Consistent box-sizing, margin, and padding  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Basic styling */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -50px;
+}
+/* Main Heading */
+h1 {
+  color: black;
+  font-size: 2rem;
+  /* Adds space between letters */
+  letter-spacing: 0.2rem;
+  font-weight: bolder;
+  font-style: normal;
+  /* Margin below the heading  */
+  margin-bottom: 10px;
+}
+/* Styling for the paragraph  */
+p {
+  color: red;
+  filter: drop-shadow(20px 20px 30px #d01111);
+  margin-bottom: 20px;
+}
+/* Parent container */
+.Box {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* black shadow effect to the Box */
+  filter: drop-shadow(2px 2px 2px #000);
+  background-color: red;
+  /* Borders of the Box-parent */
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-radius: 0.5px;
+}
+.Box > div {
+  /* Each div inside the Box flexible */
+  /* Flex grow, flex shrink, flex basis */
+  flex: 1 1 48%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* I added a specific background for box 1 and 4 */
+.box-1,
+.box-4 {
+  background-color: #de4839;
+}
+/* I added a specific background for box 2 and 3 */
+.box-2,
+.box-3 {
+  background-color: #e84c3d;
+}
+/* Animated Borders in Box 1... */
+.animated-border1 {
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  width: 30%;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #e84c3d;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+/* Animations to the borders in .animated-border1 */
+.animated-border1::before,
+.animated-border1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: white;
+  animation: border1 6s infinite;
+}
+/* Top border */
+.animated-border1::before {
+  top: 0;
+}
+/* Bottom border */
+.animated-border1::after {
+  bottom: 0;
+}
+
+@keyframes border1 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Animation curve for the border animation */
+.animated-border1::before,
+.animated-border1::after {
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+}
+/* Styling for animated borders in box-2 */
+.animated-border2 {
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  width: 30%;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #e86155;
+  text-transform: uppercase;
+  overflow: hidden;
+  /* Animation applied to the border */
+  /* The animation border2 will run for 6s, using an ease-in-out easing effect 
+  (starting slow, speeding up, then slowing down), it will repeat infinitely. */
+  animation: border2 6s ease-in-out infinite;
+}
+
+.animated-border2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  animation: text 6s forwards;
+}
+
+@keyframes text {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.animated-border2::before {
+  /* The timing function for the animation, creating a ease-in and ease-out effect. */
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  /* I set the animation to repeat infinitely */
+  animation-iteration-count: infinite;
+  /* With animation-fill-mod - the element will revert to its initial state */
+  animation-fill-mode: none;
+}
+
+/* Circle container and circles */
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+}
+/* Center Circle (white) */
+.center-circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+/* Two circles around the white circle */
+.circle-1,
+.circle-2 {
+  width: 10px;
+  height: 10px;
+  background-color: #e86155;
+  border-radius: 50%;
+  position: absolute;
+}
+/* animation to move left the circle 1 */
+.circle-1 {
+  animation: move-left 1.5s ease-in-out infinite;
+}
+/* animation to move right the circle 2 */
+.circle-2 {
+  animation: move-right 1.5s ease-in-out infinite;
+}
+/* Keyframes */
+@keyframes move-left {
+  0% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) translateX(25px) rotate(-180deg);
+  }
+  60% {
+    transform: rotate(180deg) translateX(25px) rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(25px) rotate(0deg);
+  }
+}
+@keyframes move-right {
+  0% {
+    transform: rotate(0deg) translateX(-25px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) translateX(-25px) rotate(180deg);
+  }
+  60% {
+    transform: rotate(180deg) translateX(-25px) rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-25px) rotate(0deg);
+  }
+}
+.square {
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #e84c3d;
+  text-transform: uppercase;
+  overflow: hidden;
+  animation: border2 6s ease-in-out infinite;
+}
+.square::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  animation: text 6s forwards;
+}
+
+@keyframes text {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.square::before {
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+}
+/* Box 4 */
+.box-4 {
+  position: relative;
+  width: 150px; 
+  height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Circle styles */
+.circle-square {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: followSquareEdge 2s linear infinite;
+}
+
+/* Animation for moving the circle around the perimeter of the square */
+/* I set this to 25px */
+@keyframes followSquareEdge {
+  /* Top-right */
+  0% {
+    transform: translate(-50%, -50%) translateX(25px) translateY(-25px); 
+  }
+  /* Bottom-right */
+  25% {
+    transform: translate(-50%, -50%) translateX(25px) translateY(25px); 
+  }
+/* Bottom-left */
+  50% {
+    transform: translate(-50%, -50%) translateX(-25px) translateY(25px); 
+  }
+  /* Top-left */
+  75% {
+    transform: translate(-50%, -50%) translateX(-25px) translateY(-25px); 
+  }
+  /* Top-right */
+  100% {
+    transform: translate(-50%, -50%) translateX(25px) translateY(-25px); 
+  }
+}

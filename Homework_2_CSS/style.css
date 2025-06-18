@@ -1,0 +1,461 @@
+/* HOME PAGE */
+h1 {
+  color: rgb(34, 21, 34);
+  text-align: center;
+}
+/* Background color */
+#home-page {
+  background-color: rgb(245, 240, 250);
+}
+
+/* Styling for the paragraph 1*/
+#home-page .p1 {
+  color: rgb(42, 27, 56);
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Styling for the paragraph 2 */
+#home-page .p2 {
+  color: rgb(37, 23, 37);
+  text-align: center;
+  font-weight: bold;
+}
+/* Style for all the other paragraphs */
+#home-page p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 10px 0;
+  padding: 3px;
+}
+/* Style for the navigation: About us, Products, News and Contact us. */
+#home-page nav {
+  text-align: center;
+  background-color: #b93657;
+  padding: 10px;
+}
+/* Unordered list */
+#home-page nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* The navigation list will be applied horizontally and the space between them will be 20px. */
+/* They will be on the same line. */
+#home-page nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* I set white color to the nav bar items and the text will be bold. 
+We can click on the nav elements. With text decorations there is no underline. */
+#home-page nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* This is the style for the form. It will be in the center of the website. */
+#home-page form {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px;
+}
+/* Style for the search input */
+#home-page form input[type="search"] {
+  padding: 5px;
+  font-size: 14px;
+  color: black;
+}
+/* Style for the submit button*/
+#home-page form input[type="submit"] {
+  padding: 6px 15px;
+  font-size: 14px;
+  background-color: #aa0d56;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* When I try to click on the button the background color changes. */
+/* :hover is a pseudo class. */
+#home-page form input[type="submit"]:hover {
+  background-color: #929090;
+}
+
+#home-page .dairy-link {
+  color: rgb(34, 102, 34);
+  display: block;
+  width: 1000px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+#home-page .milk {
+  color: rgb(34, 102, 34);
+  display: block;
+  width: 900px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#home-page .whyChooseUs {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#home-page .whyChooseUs h2 {
+  color: #e741b0;
+}
+
+/* Why Choose Us unordered list */
+#home-page .whyChooseUs ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#home-page .whyChooseUs li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+#home-page .whyChooseUs .prefix {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Style h3 */
+#home-page h3 {
+  color: #c41466;
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px 0;
+}
+
+/* Class attribute of dairy-shop */
+/* The class dairy-shop is applied to the <p> tag */
+#home-page .dairy-shop {
+  color: #c41466;
+  text-align: center;
+}
+/* Class="openingHours" */
+#home-page .openingHours {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f1b5d1;
+  color: rgb(68, 22, 47);
+  font-size: 16px;
+  font-weight: bold;
+  width: 50%;
+}
+#home-page .openingHours ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+#home-page .openingHours li {
+  line-height: 2;
+  margin-bottom: 15px;
+}
+/* Style for footer */
+#home-page footer {
+  text-align: center;
+  background-color: #f8f8f8;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 2px solid #c41466;
+  padding: 20px;
+}
+/* Back to top */
+#home-page footer .back-to-top {
+  font-size: 15px;
+  color: #c41466;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ABOUT US PAGE */
+/* About page background color */
+#about-page {
+  background-color: rgb(
+    209,
+    43,
+    126
+  ); /* Specific background for About Us page */
+}
+/* About page heading 1 */
+#about-page .h1 {
+  color: rgb(54, 18, 42);
+  text-align: center;
+  font-size: 3em;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Navigation */
+#about-page nav {
+  background-color: #df89a4;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 300px;
+  margin: 20px auto;
+}
+/* Unordered list */
+#about-page nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#about-page nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#about-page nav ul li a {
+  color: rgb(22, 8, 8);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Heading 2 */
+#about-page .h2 {
+  color: rgb(20, 6, 6);
+  text-align: center;
+}
+/* Image style */
+#about-page .image {
+  height: 300px;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+/* Paragraph */
+#about-page .paragraph {
+  font-size: 1.2em;
+  margin-top: 15px;
+  padding: 0 20px;
+  text-align: justify;
+  color: aliceblue;
+}
+/* Other image style */
+#about-page .image1 {
+  width: 350px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* CONTACT PAGE */
+
+#contact-page h1 {
+  color: rgb(133, 12, 106);
+  text-align: center;
+}
+
+#contact-page h2 {
+  color: rgb(179, 86, 179);
+  text-align: center;
+}
+
+#contact-page nav {
+  background-color: #df89a4;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 300px;
+  margin: 20px auto;
+}
+/* Unordered list */
+#contact-page nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact-page nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#contact-page nav ul li a {
+  color: rgb(14, 2, 9);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#contact-page .image {
+  width: 600px;
+  height: 350px;
+}
+
+#contact-page .p1 {
+  color: rgb(207, 30, 154);
+}
+#contact-page .image1 {
+  width: 120px;
+  height: 130px;
+}
+
+#contact-page .contact-info {
+  background-color: #c7adb5;
+}
+
+/* NEWS PAGE */
+
+#news-page {
+  background-color: rgb(209, 43, 126);
+}
+
+#news-page h1 {
+  color: rgb(245, 242, 245);
+  text-align: center;
+}
+
+/* Unordered list */
+#news-page nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#news-page nav ul li {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: underline;
+  color: #600d79;
+  margin-right: 20px;
+}
+#news-page nav ul li a {
+  color: rgb(249, 249, 253);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#news-page h2 {
+  color: rgb(245, 242, 245);
+  text-align: center;
+}
+#news-page p {
+  color: aliceblue;
+}
+#news-page h3 {
+  color: aliceblue;
+}
+
+/* PRODUCTS PAGE */
+#products-page {
+  background-color: rgb(209, 43, 126);
+}
+
+#products-page h1 {
+  color: rgb(246, 244, 248);
+  text-align: center;
+}
+
+#products-page p {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+#products-page nav {
+  text-align: center;
+  background-color: #e9bbc6;
+  padding: 10px;
+}
+/* Unordered list */
+#products-page nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#products-page nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#products-page nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Hover effect for the links */
+#products-page nav ul li a:hover {
+  color: #219e2b; /* Change color to gold when hovered */
+}
+#products-page h2 {
+  color: aliceblue;
+}
+#products-page p {
+  color: aliceblue;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#products-page img {
+  display: block;
+  margin: 0 auto;
+}
+#products-page h3 {
+  color: aliceblue;
+  display: block;
+  margin: 0 auto;
+}
+
+#products-page image1 {
+  width: 70px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+}
+#products-page p1 {
+  color: aliceblue;
+  text-align: center;
+}
+#products-page .product-image {
+  width: 17%;
+  height: 17%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling for the product labels */
+#products-page .product-label {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* IMAGES */
+#images {
+  background-color: rgb(209, 43, 126);
+}
+#images h1 {
+  color: rgb(240, 235, 240);
+  text-align: center;
+}
+
+#images image {
+  display: block;
+  place-items: center;
+  margin: 0 auto;
+}

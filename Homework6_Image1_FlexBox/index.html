@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian's Painting 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Heading 1 - Working with FlexBox -->
+    <h1>Working with Flexible Box Module (Image 1)</h1>
+    <!-- Paragraph - Recreating the image - Mondrian's Painting -->
+    <p>Piet Mondrian Painting 1 - Composition with Red, Blue and Yellow</p>
+    <!-- The main parent container that holds all the colored boxes -->
+    <div class="parent-div">
+      <!-- The left column contains the white box, white box1 and blue box -->
+      <div class="column-left">
+        <div class="white-box"></div>
+        <div class="white-box1"></div>
+        <div class="blue-box"></div>
+      </div>
+      <!-- The right column contains the red box and a nested container-->
+      <div class="column-right">
+        <div class="red-box"></div>
+        <!-- Nested container (additional boxes in the right column) -->
+        <div class="right-box-container">
+          <div class="white-box2"></div>
+          <!-- A flex container for the two smaller boxes (the white box3 and the yellow box) -->
+          <div class="two-boxes">
+            <div class="white-box3"></div>
+            <div class="yellow-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

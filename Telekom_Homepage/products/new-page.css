@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #c7005f;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Product Container */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Product Title and Description */
+.product-name {
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Price */
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(33, 146, 226);
+    margin-bottom: 15px;
+}
+
+/* Button */
+.more-btn {
+    background-color: #c7005f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.back-btn {
+    background-color: white;  
+    color: #c7005f;                
+    padding: 12px 24px;          
+    font-size: 1.2em;           
+    border: black;                
+    border-radius: 25px;          
+    cursor: pointer;            
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    text-align: center;          
+}
+
+.back-btn:focus {
+    outline: none;             
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
+}
+/* Shake Effect */
+.back-btn:hover {
+    background-color: #c7005f;
+    animation: shake 0.5s ease; 
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px); 
+    }
+    50% {
+        transform: translateX(5px);  
+    }
+    75% {
+        transform: translateX(-5px); 
+    }
+    100% {
+        transform: translateX(0);    
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    
+    .product-name {
+        font-size: 18px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+}
